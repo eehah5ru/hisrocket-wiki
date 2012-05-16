@@ -55,7 +55,7 @@ $wgDBtype           = "mysql";
 $wgDBserver         = "localhost";
 $wgDBname           = "wikidb";
 $wgDBuser           = "root";
-$wgDBpassword       = "";
+$wgDBpassword       = "mysqlroot";
 
 # MySQL specific settings
 $wgDBprefix         = "";
@@ -145,5 +145,5 @@ $wgDefaultUserOptions['wikieditor-preview'] = 1;
 #
 require_once( "$IP/extensions/UploadWizard/UploadWizard.php" );
 
-$wgUploadNavigationUrl = '/index.php/Special:UploadWizard';
+$wgUploadNavigationUrl = "$wgScriptPath/index.php/Special:UploadWizard";
 
