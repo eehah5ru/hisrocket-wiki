@@ -179,6 +179,19 @@ getDefaultConfig: function() {
 									'pre': "--~~~~"
 								}
 							}
+						},
+						'blockquote': {
+							labelMsg: 'wikieditor-toolbar-tool-blockquote',
+							type: 'button',
+							icon: 'button-blockquote.png',
+							action: {
+								type: 'encapsulate',
+								options: {
+									pre: "<blockquote>\n",
+									periMsg: 'wikieditor-toolbar-tool-blockquote-example',
+									post: "\n</blockquote>"
+								}
+							}
 						}
 					}
 				}
