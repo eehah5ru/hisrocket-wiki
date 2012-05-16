@@ -1,0 +1,13 @@
+$wgScriptPath       = "/~nicolaspesivcev/hisrocket-wiki";
+
+
+$wgServer           = "http://localhost";
+
+$wgEmergencyContact = "hisrocket@gmail.com";
+$wgPasswordSender   = "hisrocket@gmail.com";
+
+$wgDBtype           = "mysql";
+$wgDBserver         = "localhost";
+$wgDBname           = "wikidb";
+$wgDBuser           = "root";
+$wgDBpassword       = "mysqlroot";

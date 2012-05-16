@@ -21,15 +21,26 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgSitename      = "hisrocket";
 $wgMetaNamespace = "Hisrocket";
 
+
+#
+# include serverSettings.php
+#
+require_once( "$IP/serverSettings.php");
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
 ## For more information on customizing the URLs please see:
 ## http://www.mediawiki.org/wiki/Manual:Short_URL
-$wgScriptPath       = "/~nicolaspesivcev/hisrocket-wiki";
+#
+# see serverSettings.php
+#
+#$wgScriptPath       = "/~nicolaspesivcev/hisrocket-wiki";
 $wgScriptExtension  = ".php";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer           = "http://localhost";
+#
+# see serverSettings.php
+#
+#$wgServer           = "http://localhost";
 
 ## The relative URL path to the skins directory
 $wgStylePath        = "$wgScriptPath/skins";
@@ -43,19 +54,27 @@ $wgLogo             = "$wgStylePath/common/images/wiki.png";
 $wgEnableEmail      = true;
 $wgEnableUserEmail  = true; # UPO
 
-$wgEmergencyContact = "hisrocket@gmail.com";
-$wgPasswordSender   = "hisrocket@gmail.com";
+#
+# see serverSettings.php
+#
+#$wgEmergencyContact = "hisrocket@gmail.com";
+#$wgPasswordSender   = "hisrocket@gmail.com";
 
 $wgEnotifUserTalk      = false; # UPO
 $wgEnotifWatchlist     = false; # UPO
 $wgEmailAuthentication = true;
 
+
 ## Database settings
-$wgDBtype           = "mysql";
-$wgDBserver         = "localhost";
-$wgDBname           = "wikidb";
-$wgDBuser           = "root";
-$wgDBpassword       = "mysqlroot";
+#
+# see serverSettings.php
+#
+
+// $wgDBtype           = "mysql";
+// $wgDBserver         = "localhost";
+// $wgDBname           = "wikidb";
+// $wgDBuser           = "root";
+// $wgDBpassword       = "mysqlroot";
 
 # MySQL specific settings
 $wgDBprefix         = "";
