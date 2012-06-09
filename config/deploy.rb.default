@@ -4,14 +4,13 @@ set :repository,  "git@github.com:eehah5ru/hisrocket-wiki.git"
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-set :deploy_to, "/home/c/cl86444/wiki.hisrocket.org"
+set :deploy_to, "<path to deploy>"
 
 
 
-role :web, "MERCURIUS.timeweb.ru" 
+role :web, "<server name>" 
 
-#server "MERCURIUS.timeweb.ru", :web
-set :user, "cl86444"
+set :user, "<user name>"
 set :via, "scp"
 set :use_sudo, false
 ssh_options[:forward_agent] = true
